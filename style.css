@@ -27,3 +27,37 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+img {
+  width: 100%
+}
+
+/* Group and items */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.banner {
+  background-color: #5c4f41;
+  padding: 5px 50px;
+  align-content: center;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* Groups & Items for desktop*/
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+}
